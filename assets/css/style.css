@@ -229,7 +229,7 @@ body {
 .reservations {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 150px;
+  padding: 70px 150px;
 }
 .reservations-left-side {
   flex-basis: 50%;
@@ -318,6 +318,107 @@ body {
     padding: 40px;
   }
   .reservations-right-side h1 {
+    font-size: 30px;
+  }
+  .list-item p {
+    letter-spacing: 0;
+  }
+}
+
+/* FAST-REPORTS Section */
+.fast-reports {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 150px;
+}
+.fast-reports-left-side {
+  flex-basis: 50%;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.fast-reports-heading {
+  display: flex;
+}
+.fast-reports-heading h6 {
+  font-size: 16px;
+  letter-spacing: 0.79px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #f0d9d8;
+  color: #ec615b;
+}
+.fast-reports-left-side h1 {
+  font-size: 32px;
+  letter-spacing: 1.2px;
+}
+
+.fast-reports-left-side p {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  line-height: 27px;
+  color: #77838f;
+}
+.fast-reports-left-side .list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.list-icon {
+  background-color: #cfdbff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 15px 30px;
+}
+.list-icon:hover {
+  background: linear-gradient(135deg, #192b74 0.42%, #2946a1 100%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.list-item p {
+  font-size: 14px;
+  letter-spacing: 0.49px;
+}
+.fast-reports-right-side {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fast-reports-img-div {
+  background-color: #cfdbff;
+  width: 460px;
+  height: 385px;
+  min-width: 200px;
+}
+@media (max-width: 1219px) {
+  .fast-reports {
+    justify-content: center;
+    align-items: center;
+  }
+  .fast-reports-left-side,
+  .fast-reports-right-side {
+    flex-basis: 100%;
+  }
+  .fast-reports-left-side {
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .fast-reports {
+    padding: 40px;
+  }
+  .fast-reports-left-side h1 {
     font-size: 30px;
   }
   .list-item p {
