@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   box-sizing: border-box;
+  font-weight: 400;
 }
 body {
   font-family: "Nunito", sans-serif;
@@ -23,21 +24,20 @@ body {
 }
 .nav-links a {
   color: #77838f;
-  font-weight: 400;
   font-size: 16px;
   letter-spacing: 1.2px;
 }
 .nav-links a img {
   margin-left: 10px;
 }
-.nav-btn {
+.btn-blue {
   background-color: #142d71;
   color: #fff;
   border: none;
   outline: none;
-  width: 98px;
-  height: 42px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .fa-bars {
@@ -52,9 +52,100 @@ body {
     display: flex;
   }
 }
-
 @media (max-width: 768px) {
   .header {
+    padding: 40px;
+  }
+}
+
+/* INTROSECTION Section */
+.introsection {
+  display: flex;
+  padding-left: 150px;
+  height: 622px;
+  gap: 20px;
+}
+.intro-left-side {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  row-gap: 15px;
+}
+.intro-left-side h1 {
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 1.42px;
+  color: #1e2022;
+}
+.intro-left-side p {
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.6px;
+  color: #77838f;
+}
+.intro-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.intro-btns img {
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+.intro-btns img:hover {
+  border: 1px solid #969da3;
+  transition: 0.3s ease-in;
+}
+.intro-btns span {
+  color: #77838f;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.intro-right-side {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #192b74 0.42%, #2946a1 100%);
+  border-bottom-left-radius: 80%;
+}
+.intro-right-side img {
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+.intro-right-side img:hover {
+  border: 1px solid #969da3;
+}
+@media (max-width: 1068px) {
+  .intro-left-side h1 {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 1021px) {
+  .introsection {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 150px;
+    height: auto;
+  }
+  .intro-left-side {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .intro-right-side {
+    border-radius: 0;
+    width: 100%;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introsection {
     padding: 40px;
   }
 }
