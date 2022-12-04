@@ -6,7 +6,6 @@
 }
 body {
   font-family: "Nunito", sans-serif;
-  font-family: "PT Sans", sans-serif;
 }
 
 .header {
@@ -460,5 +459,105 @@ body {
   }
   .counter-column {
     width: 100%;
+  }
+}
+
+/* PRICING Section */
+.pricing {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 150px;
+  gap: 60px;
+}
+.pricing-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.pricing-texts h6 {
+  font-size: 16px;
+  letter-spacing: 0.79px;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #f0d9d8;
+  color: #ec615b;
+}
+.pricing-texts h1 {
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.pricing-texts p {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  line-height: 27px;
+  color: #77838f;
+}
+.pricing-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  border: 1px solid #cfdbff;
+  padding: 30px;
+}
+.pricing-card:hover {
+  border: 1px solid #969da3;
+}
+.card-heading {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  color: #142d71;
+}
+.pricing-card .price {
+  font-size: 60px;
+  letter-spacing: 2.25px;
+}
+.services-list p {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  line-height: 27px;
+  color: #77838f;
+}
+.services-list .deactive {
+  color: #d3d3d3;
+}
+.card-btn {
+  padding: 10px;
+  background-color: #cfdbff;
+  color: #142d71;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1.07px;
+}
+.color-red {
+  color: #ec615b;
+}
+.bg-light-red {
+  background-color: #f5ccca;
+}
+
+@media (max-width: 600px) {
+  .pricing {
+    padding: 40px;
+  }
+  .pricing-texts p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
