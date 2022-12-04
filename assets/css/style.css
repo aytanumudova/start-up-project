@@ -561,3 +561,64 @@ body {
     line-height: 20px;
   }
 }
+
+/* DOWNLOAD Section */
+.download-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 150px;
+}
+.download-section h1 {
+  font-size: 32px;
+  letter-spacing: 1.2px;
+}
+.download-section p {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  line-height: 27px;
+  color: #77838f;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.download-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.download-btns a {
+  display: flex;
+  background-color: #142d71;
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  gap: 10px;
+}
+.btn-texts {
+  display: flex;
+  flex-direction: column;
+}
+.btn-texts small {
+  font-size: 12px;
+  letter-spacing: 0.42px;
+}
+.btn-texts small span {
+  font-size: 16px;
+  letter-spacing: 0.6px;
+}
+@media (max-width: 768px) {
+  .download-section {
+    padding: 60px 40px;
+  }
+}
+@media (max-width: 543px) {
+  .download-btns {
+    flex-direction: column;
+  }
+  .download-section p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
